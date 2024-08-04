@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+/* for default style, header, main, footer */
+:root {
+  --dark: #1c0a00;
+  --brown: #603601;
+  --cream: #eed8c0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* for header and footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header (navbar) style */
+.navbar {
+  background-color: var(--brown);
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+/* for navbar logo */
+.navbar .navbar-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--dark);
+}
+
+.navbar-nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 20px 12px;
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navbar-nav a:hover {
+  background: var(--dark);
+  color: #fff;
+}
+
+/* footer style */
+.footer {
+  background-color: var(--brown);
+  color: #fff;
+  text-align: center;
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer span {
+  font-weight: 700;
+}
